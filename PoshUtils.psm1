@@ -28,8 +28,8 @@ function Write-Log {
         # setting Default path the User Temp.
         [Parameter(Mandatory=$true)]
         [String]$Message,
-        [ValidateSet("Error","Warning","Info")] 
         [String]$LogFile="$($Env:Temp)\Write-Log-$(Get-Date -Format yyyy-M-d).log",
+        [ValidateSet("Error","Warning","Info")] 
         [string]$Level="Info", 
         [string]$Tag 
 
